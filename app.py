@@ -1,16 +1,18 @@
-from flask import Flask, render_template, request, jsonify
 import random
+from flask import (Flask, render_template, request, jsonify)
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def index():
+    print('Render index.html')
     return render_template('index.html')
 
 
 @app.route('/play', methods=['POST'])
 def play():
+    print('Render play()')
     choices = ['rock', 'paper', 'scissors']
     user_choice = request.json['choice']
     computer_choice = random.choice(choices)
