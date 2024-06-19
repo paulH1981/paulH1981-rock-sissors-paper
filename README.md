@@ -5,4 +5,7 @@ A game where you choose between rock, paper or sissors.
 Rock beat sissors, paper beats rock and sissors beat paper.
 
 
+## Run the game
+Running the game with 'python3 app.py'
+
 @Copyright Paul Hasfjord 2024
