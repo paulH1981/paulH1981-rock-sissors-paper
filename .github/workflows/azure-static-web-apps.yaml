@@ -34,5 +34,8 @@ jobs:
       - name: Start Flask application
         run: |
           export FLASK_APP=app.py
-          flask run --host=0.0.0.0 --port=5000
+          export FLASK_ENV=production  # Ensure Flask runs in production mode
+          pip install gunicorn         # Install Gunicorn as a production WSGI server
+          gunicorn -b 0.0.0.0:5000 app:app  # Replace 'app:app' with your Flask application entry point
+    
 
