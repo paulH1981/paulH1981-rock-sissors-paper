@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.rock, .scissors, .paper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.choices {
+    display: flex;
+    justify-content: flex-start; /* Left-align horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.choices img {
+    width: 100px;
+    height: 100px;
+    margin-right: 0.5rem; /* Add some space between images */
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.choices img:hover {
+  background-color: #d32f2f;
+}
+
+#result {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
