@@ -29,7 +29,7 @@ jobs:
 
       - name: Build and deploy static app
         run: |
-          # You can leave this section empty or adjust for Python-specific tasks
+          # No specific build steps for static assets in a Flask app
 
       - name: Start Flask application
         run: |
